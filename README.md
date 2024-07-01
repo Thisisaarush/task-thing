@@ -1,5 +1,7 @@
 # task-thing - `CLIENT`
 
+- The Server/Backend Repository can be found [here](https://github.com/Thisisaarush/task-thing-server)
+
 ## Pre-requisites
 
 ### [Mac OS](https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=simulated&mode=development-build#install-watchman)
@@ -10,7 +12,7 @@
   brew update
   brew install watchman
   ```
-  
+
 - Xcode Command Line Tools
 - EAS CLI
 
@@ -23,9 +25,12 @@
    ***
 
    OR
+   `Run dev build`:
 
-   - Build the development version with `npm run build:dev:android` || `npm run build:dev:ios` and install the `.apk` or `.ipa` file respectively.
-
-   - Then start the `dev build` using `npm run start:dev:android` || `npm run start:dev:ios`.
+   - Build on cloud with `EAS`:
+     - Build the development version on cloud with `npm run build:dev:android` || `npm run build:dev:ios`
+     - Then start the `dev build` using `npm run start:dev:android` || `npm run start:dev:ios`
+   - Build on local:
+     - Build and run with `npm run dev:android` || `npm run dev:ios`
 
    ***
