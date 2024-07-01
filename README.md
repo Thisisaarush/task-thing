@@ -1,50 +1,31 @@
-# Welcome to your Expo app 👋
+# task-thing - `CLIENT`
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Pre-requisites
 
-## Get started
+### [Mac OS](https://docs.expo.dev/get-started/set-up-your-environment/?platform=ios&device=simulated&mode=development-build#install-watchman)
 
-1. Install dependencies
+- **Watchman** is a tool for watching changes in the filesystem. Installing it will result in better performance. You can install it with:
 
-   ```bash
-   npm install
-   ```
+  ```bash
+  brew update
+  brew install watchman
+  ```
+  
+- Xcode Command Line Tools
+- EAS CLI
 
-2. Start the app
+## How to run the project
 
-   ```bash
-    npx expo start
-   ```
+1. Clone the repository.
+2. Run `npm install` to install the dependencies.
+3. Run `npm start` to start the project on `Expo Go` app on simulator/real device.
 
-In the output, you'll find options to open the app in a
+   ***
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   OR
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+   - Build the development version with `npm run build:dev:android` || `npm run build:dev:ios` and install the `.apk` or `.ipa` file respectively.
 
-## Get a fresh project
+   - Then start the `dev build` using `npm run start:dev:android` || `npm run start:dev:ios`.
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+   ***
