@@ -34,3 +34,13 @@
      - Build and run with `npm run dev:android` || `npm run dev:ios`
 
    ***
+
+## How to build and publish to App Stores without EAS (because EAS is paid and free tier takes forever to build)
+
+- [Google Play Store](https://reactnative.dev/docs/signed-apk-android) - Follow this guide and replace build command(step 4) with `npm run build:prod:android`
+- [Apple App Store](https://reactnative.dev/docs/publishing-to-app-store)
+
+### Pre-requisites for building and publishing to App Stores
+
+- [Google Play Developer Account](https://play.google.com/console/u/0/developers/8035045980270036130/app-list?onboardingflow=signup)
+- [Apple Developer Account](https://developer.apple.com/programs/)

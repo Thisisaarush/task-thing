@@ -10,18 +10,22 @@
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint",
-    "dev:android": "expo run:android",
     "dev:ios": "expo run:ios",
-    "build:dev:android": "eas build --platform android --profile development",
-    "build:dev:ios": "eas build --platform ios --profile development",
-    "build:prod:android": "eas build --platform android",
-    "build:prod:ios": "eas build --platform ios"
+    "dev:android": "expo run:android",
+    "build:clean": "expo prebuild --clean",
+    "build:prod:android": "npx expo run:android --variant release",
+    "eas:build:dev:ios": "eas build --platform ios --profile development",
+    "eas:build:dev:android": "eas build --platform android --profile development",
+    "eas:build:prod": "eas build --platform all",
+    "eas:build:prod:ios": "eas build --platform ios",
+    "eas:build:prod:android": "eas build --platform android"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
+    "@react-native-google-signin/google-signin": "^12.2.1",
     "@react-navigation/native": "^6.0.2",
     "expo": "~51.0.17",
     "expo-constants": "~16.0.2",
