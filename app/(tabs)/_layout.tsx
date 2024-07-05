@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link, Tabs } from "expo-router"
 
 import { TabBarIcon } from "@/components/TabBarIcon"
@@ -22,8 +22,7 @@ export default function TabLayout() {
             position: "relative",
           },
           tabBarShowLabel: false,
-        }}
-      >
+        }}>
         <Tabs.Screen
           name="index"
           options={{
@@ -55,9 +54,8 @@ export default function TabLayout() {
         href={"/createTask"}
         className={`absolute bottom-20 ${
           Platform.OS === "android" ? "-ml-[34px]" : ""
-        } left-1/2 -translate-x-1/2`}
-      >
-        <View className="bg-white rounded-full p-1">
+        } left-1/2 -translate-x-1/2`}>
+        <View className="rounded-full bg-white p-1">
           <TabBarIcon name="add-circle" color={"black"} size={60} />
         </View>
       </Link>
