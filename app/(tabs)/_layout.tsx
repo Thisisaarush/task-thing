@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link, Tabs } from "expo-router"
 
 import { TabBarIcon } from "@/components/TabBarIcon"
-import { View } from "react-native"
+import { Platform, View } from "react-native"
 
 export default function TabLayout() {
   return (
@@ -16,6 +16,7 @@ export default function TabLayout() {
             backgroundColor: "white",
 
             width: "90%",
+            height: 70,
             marginHorizontal: "auto",
             borderRadius: 50,
             position: "relative",
@@ -52,7 +53,9 @@ export default function TabLayout() {
 
       <Link
         href={"/createTask"}
-        className="absolute bottom-20 left-1/2 -translate-x-1/2"
+        className={`absolute bottom-20 ${
+          Platform.OS === "android" ? "-ml-[34px]" : ""
+        } left-1/2 -translate-x-1/2`}
       >
         <View className="bg-white rounded-full p-1">
           <TabBarIcon name="add-circle" color={"black"} size={60} />

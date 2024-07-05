@@ -1,11 +1,12 @@
-import { View, Text, SafeAreaView } from "react-native"
+import { View, Text, Platform } from "react-native"
+import { useSafeAreaInsets } from "react-native-safe-area-context"
 
 export default function CreateTaskScreen() {
+  const insets = useSafeAreaInsets()
+
   return (
-    <SafeAreaView>
-      <View>
-        <Text>create task</Text>
-      </View>
-    </SafeAreaView>
+    <View style={{ paddingTop: Platform.OS === "android" ? insets.top : 0 }}>
+      <Text>create task</Text>
+    </View>
   )
 }
