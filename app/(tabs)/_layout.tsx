@@ -1,8 +1,7 @@
 import React from "react"
+import { View } from "react-native"
 import { Link, Tabs } from "expo-router"
-
 import { TabBarIcon } from "@/components/TabBarIcon"
-import { Platform, View } from "react-native"
 
 export default function TabLayout() {
   return (
@@ -11,15 +10,10 @@ export default function TabLayout() {
         screenOptions={{
           headerShown: false,
           tabBarStyle: {
-            marginBottom: 30,
-            paddingBottom: 0,
-            backgroundColor: "white",
-
-            width: "90%",
-            height: 70,
-            marginHorizontal: "auto",
-            borderRadius: 50,
-            position: "relative",
+            height: 80,
+            backgroundColor: "transparent",
+            borderTopColor: "transparent",
+            shadowColor: "transparent",
           },
           tabBarShowLabel: false,
         }}>
@@ -50,13 +44,9 @@ export default function TabLayout() {
         />
       </Tabs>
 
-      <Link
-        href={"/createTask"}
-        className={`absolute bottom-20 ${
-          Platform.OS === "android" ? "-ml-[34px]" : ""
-        } left-1/2 -translate-x-1/2`}>
-        <View className="rounded-full bg-white p-1">
-          <TabBarIcon name="add-circle" color={"black"} size={60} />
+      <Link href={"/createTask"} className={`absolute bottom-28 right-6`}>
+        <View className="rounded-full bg-black p-4 shadow-sm">
+          <TabBarIcon name="add" color={"white"} size={35} />
         </View>
       </Link>
     </>
