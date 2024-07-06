@@ -8,13 +8,6 @@ export default function RootLayout() {
     <SafeAreaProvider>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen
-          name="createTask"
-          options={{
-            presentation: "modal",
-            headerShown: false,
-          }}
-        />
         <Stack.Screen name="+not-found" />
       </Stack>
     </SafeAreaProvider>
