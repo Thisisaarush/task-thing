@@ -1,7 +1,7 @@
 import React from "react"
 import { Tabs } from "expo-router"
 import { TabBarIcon } from "@/components/TabBarIcon"
-import { CreateButton } from "@/components/CreateButton"
+import { CreateTask } from "@/components/CreateTask"
 
 export default function TabLayout() {
   return (
@@ -44,7 +44,7 @@ export default function TabLayout() {
         />
       </Tabs>
 
-      <CreateButton href="/createTask" className="absolute bottom-28 right-6" />
+      <CreateTask className="absolute bottom-28 right-6" />
     </>
   )
 }
