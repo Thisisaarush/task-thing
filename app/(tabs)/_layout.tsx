@@ -1,7 +1,7 @@
 import React from "react"
-import { View } from "react-native"
-import { Link, Tabs } from "expo-router"
+import { Tabs } from "expo-router"
 import { TabBarIcon } from "@/components/TabBarIcon"
+import { CreateButton } from "@/components/CreateButton"
 
 export default function TabLayout() {
   return (
@@ -44,11 +44,7 @@ export default function TabLayout() {
         />
       </Tabs>
 
-      <Link href={"/createTask"} className={`absolute bottom-28 right-6`}>
-        <View className="rounded-full bg-black p-4 shadow-sm">
-          <TabBarIcon name="add" color={"white"} size={35} />
-        </View>
-      </Link>
+      <CreateButton href="/createTask" className="absolute bottom-28 right-6" />
     </>
   )
 }
